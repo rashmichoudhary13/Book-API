@@ -5,7 +5,7 @@ export const getBooks = async (req, res) => {
     const queries = req.query;
 
     const books = await Book.getAllBooks(queries);
-    res.json(books);
+    res.json(books.data);
   } catch (err) {
     res.status(400).json({ error: err.message });
   }

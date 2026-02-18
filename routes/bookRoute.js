@@ -3,11 +3,11 @@ import {getBooks, getBookById, addBook, updateBook, deleteBook, authorUpdate,fil
 
 const router = express.Router();
 
-// @route get /book
 router.get('/', getBooks);
-router.post('/', addBook);
 
-//@route filter
+router.post('/',addBook);
+
+//@route /book/filter
 router.get('/filter',filterDataControl);
 
 //@route /book/id

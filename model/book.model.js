@@ -89,7 +89,7 @@ export const createBook = async (data) => {
     const author_id = author_resutl.insertId;
 
     await db.execute(
-      `INSERT INTO books (title,price,rating, published_year,author_id,in_stock) values (?,?,?,?,?,?,?)`,
+      `INSERT INTO books (title,price,rating, published_year,author_id,in_stock,image_url) values (?,?,?,?,?,?,?)`,
       [title, price, rating, published_year, author_id, in_stock,image_url],
     );
     return { message: "Inserted data successfully" };
