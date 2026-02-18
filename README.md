@@ -49,9 +49,9 @@ Authors Table
 ```
 CREATE TABLE authors (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) UNIQUE NOT NULL,
+  name VARCHAR(255) NOT NULL,
   name_key VARCHAR(255) UNIQUE,
-  nationality VARCHAR(255) NOT NULL
+  nationality VARCHAR(255) 
 );
 ```
 Books Table
