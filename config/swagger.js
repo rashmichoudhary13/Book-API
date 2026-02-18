@@ -23,9 +23,13 @@ const options = {
     ],
     servers: [
       {
+        url: `https://book-api-production-52ad.up.railway.app/`,
+        description: "Production Server"
+      },
+      {
         url: `http://localhost:3000`,
         description: "Development Server"
-      },
+      }
     ]
   },
   apis: ['./swagger/*.js'],
