@@ -1,4 +1,7 @@
 import swaggerJsdoc from 'swagger-jsdoc';
+import 'dotenv/config';
+
+const PORT = process.env.PORT || 3000;
 
 const options = {
   failOnErrors: true, // Whether or not to throw when parsing errors. Defaults to false.
@@ -27,7 +30,7 @@ const options = {
         description: "Production Server"
       },
       {
-        url: `http://localhost:3000`,
+        url: `http://localhost:${PORT}`,
         description: "Development Server"
       }
     ]
