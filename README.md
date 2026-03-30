@@ -19,7 +19,7 @@ Includes full CRUD operations, filtering, paging, relational database design, an
 
 - Node.js
 - Express.js
-- MySQL Database
+- MySQL Database (TiDB Cloud)
 - Swagger-Jsdoc
 - dotenv
 - mysql2
