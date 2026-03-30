@@ -24,6 +24,31 @@ Includes full CRUD operations, filtering, paging, relational database design, an
 - dotenv
 - mysql2
 
+# 🔗 API Routes
+
+## 📖 Book Routes (`/book`)
+
+| Method | Route              | Description                            |
+| ------ | ------------------ | -------------------------------------- |
+| GET    | `/book/`           | Get all books                          |
+| POST   | `/book/`           | Add a new book                         |
+| GET    | `/book/filter`     | Filter books based on query parameters |
+| GET    | `/book/:id`        | Get a book by ID                       |
+| PUT    | `/book/:id`        | Update book details                    |
+| DELETE | `/book/:id`        | Delete a book                          |
+| PUT    | `/book/author/:id` | Update author details for a book       |
+
+---
+
+## ✍️ Author Routes (`/author`)
+
+| Method | Route         | Description           |
+| ------ | ------------- | --------------------- |
+| GET    | `/author/`    | Get all authors       |
+| POST   | `/author/`    | Add a new author      |
+| GET    | `/author/:id` | Get author by ID      |
+| PUT    | `/author/:id` | Update author details |
+
 ## ⚙️ Installation
 
 ### 1️⃣ Clone the Repository
