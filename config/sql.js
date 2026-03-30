@@ -3,7 +3,7 @@ import 'dotenv/config';
 import fs from 'fs';
 // Connect with the server
 
-const db = await mysql.createConnection({
+const db = await mysql.createPool({
   host: process.env.SQL_HOST,
   port: process.env.DB_PORT,
   user: process.env.SQL_USER,
